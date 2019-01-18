@@ -24,5 +24,3 @@ urlpatterns = [
     url(r'^rango/', include('rango.urls'))
 ]
 
-
-]
