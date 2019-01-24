@@ -3,8 +3,8 @@ from django.template.defaultfilters import slugify
 
 class Category(models.Model):
     name = models.CharField(max_length=128, unique = True)
-    like = models.IntegerField(default=0)
-    view = models.IntegerField(default=0)
+    likes = models.IntegerField(default=0)
+    views = models.IntegerField(default=0)
     slug = models.SlugField(blank=True, unique=True)
 
     def save(self, *args, **kwargs):
